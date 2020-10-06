@@ -1,0 +1,128 @@
+:root {
+    --primary-color: white;
+    --secondary-color: white;
+    --tertiary-color: black;
+    --primary-background: #0101a0cb;
+    --secondary-background: #3ff2f8;
+    --tertiary-background: #ffffff;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--secondary-background);
+    margin: 0;
+    padding: 0;
+    background: var(--tertiary-background);
+    display: flex;
+    flex-direction: column;
+}
+
+li, a {
+    text-decoration: none;
+}
+
+header#cabecalho-principal {
+    background: var(--primary-background);
+    color: var(--primary-color);
+    height: 80px;
+    display: grid;
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+    margin-left: 10px;
+    border: 10px;
+    align-self: center;
+}
+
+.nome-do-site {
+    justify-self: center;
+    align-self: center;
+}
+
+nav#navegacao-principal {
+    background: var(--primary-background);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    grid-area: nav;
+}
+
+nav#navegacao-principal ul {
+    flex-grow: 1;
+    flex-basis: 200px;
+    color: var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+nav#navegacao-principal li {
+    list-style: none;
+    color: var(--secondary-color);
+    padding: 10px;
+}
+
+nav#navegacao-principal li a{
+    color: var(--secondary-color);
+}
+
+main {
+    flex: 1;
+}
+
+main#home {
+    background-color: var(--tertiary-background);
+    width: calc(100% - 60px);
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "intro news camps"
+                         "aside aside aside";
+}
+
+main#home>* {
+    margin: 5px;
+    padding: 10px;
+    border: 10px solid var(--primary-background);
+}
+
+.intro {
+    grid-area: intro;
+}
+
+.news {
+    grid-area: news;
+}
+
+.camps {
+    grid-area: camps;
+}
+
+aside#aside-home {
+    grid-area: aside;
+}
+
+footer#footer-default {
+    height: 22px;
+    font-size: 10px;
+    color: var(--secondary-color);
+    background-color: var(--primary-background);
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    height: 18px;
+    margin: 0px;
+}

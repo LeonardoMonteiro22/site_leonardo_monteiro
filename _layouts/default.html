@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+    <header id="cabecalho-principal">
+        <!--<img class="logo" src="/assets/images/sample-logo.jpg">-->
+        <h1 class="nome-do-site">
+            Lebinhas Games!
+        </h1>
+    </header>
+    <nav id="navegacao-principal">
+        <ul>
+            <li><a href="{{ '/index' | relative_url }}">Home</a></li>
+            <li><a href="{{ '/novidades' | relative_url }}">Novidades</a></li>
+            <li><a href="#">Campeonatos</a></li>
+            <li><a href="#">Sobre</a></li>
+        </ul>
+    </nav>
+    {{ content }}
+    <footer id="footer-default">
+        @Copyright 2020
+    </footer>
+</body>
+</html>

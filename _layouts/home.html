@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<main id="home">
+{% for post in site.posts %}
+    <section class="{% cycle 'intro', 'news', 'camps' %}">
+        <h2>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
+        <p>
+            {{ post.description  }}
+        </p>
+    </section>
+{% endfor %}
+    <aside id="aside-home">
+        <p>
+            O objetivo do LG! é ser um centro de informações do mundo dos jogos. Se você
+            está sentindo falta do seu jogo preferido, entre em contato com a gente.
+        </p>
+    </aside>
+</main>
