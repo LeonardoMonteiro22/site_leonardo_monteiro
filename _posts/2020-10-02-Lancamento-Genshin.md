@@ -12,3 +12,5 @@ O novo RPG da desenvolvedora miHoYo, Genshin Impact, foi lançado mundialmente n
 <p>
 Disponível para PC, PS4, IOS e Android, o jogo permite a experiência cross platform e já conta com 17 milhões de dowloads nas plataformas mobile!
 </p>
+
+<img src="{{ 'assets\images\genshin.jpg' | relative_url }}" alt="">
