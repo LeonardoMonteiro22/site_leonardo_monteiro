@@ -10,7 +10,6 @@ WORKDIR /leogm/myblog
 
 
 COPY . .
-COPY Gemfile Gemfile.lock ./
 RUN bundle install
 
 EXPOSE 4000

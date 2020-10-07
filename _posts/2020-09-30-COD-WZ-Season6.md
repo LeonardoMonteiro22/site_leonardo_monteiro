@@ -9,4 +9,4 @@ categories: news
 A Season 6 de Call of Duty: Warzone e Call of Duty: Modern Warfare chegou ontém, terça-feira, e, trouxe grandes adições! Dentre os novos conteúdos do Battle Royale de maior sucesso da atualidade temos a adição de uma nova região subterrânea, o "Metro", um novo modo de jogo chamado Armored Royale, além da frequente troca de armas padrões do mapa.
 </p>
 
-<img src="{{ 'assets\images\WZ-Season6.png' | relative_url }}" alt="">
+<img src="{{ 'assets/images/WZ-Season6.png' | relative_url }}" alt="">
