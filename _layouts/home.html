@@ -16,7 +16,7 @@ layout: default
     <section class="recentes">
         <h2>Posts recentes</h2>
         <ul>
-        {% for post in site.posts limit:2 %}
+        {% for post in site.posts limit:3 %}
             <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
         {% endfor %}
         </ul>

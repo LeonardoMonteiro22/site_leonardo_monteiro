@@ -24,7 +24,7 @@ body {
     flex-direction: column;
 }
 
-li, a {
+a {
     text-decoration: none;
 }
 
@@ -34,14 +34,6 @@ header#cabecalho-principal {
     height: 80px;
     display: grid;
 }
-
-// .logo {
-//     height: 70px;
-//     width: 70px;
-//     margin-left: 10px;
-//     border: 10px;
-//     align-self: center;
-// }
 
 .nome-do-site {
     justify-self: center;
@@ -119,6 +111,9 @@ label {
         display: block;
     }
     
+    main img {
+        width: 100%;
+    }
     
 }
 
@@ -138,55 +133,33 @@ main {
     font-size: 1em;
 }
 
+main a{
+    color: var(--tertiary-color);
+}
+
+main li a{
+    color: var(--primary-background);
+}
+
+main img{
+    max-width: 500px;
+}
+
 main#home {
     background-color: var(--tertiary-background);
-    // width: calc(100vh - 60px);
-    margin: 20px 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    // grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
-    // grid-template-columns: repeat(2, 1fr);
-    // grid-template-areas: "intro recentes"
-    //                      "news camps"
-    //                      "aside aside";
-    // justify-content: center;
 }
 
 main#home>* {
     margin: 5px;
     padding: 10px;
     border: 10px solid var(--primary-background);
-    // max-width: 400px;
-    // justify-self: center;
 }
-
-// .intro {
-//     grid-area: intro;
-// }
-
-// .news {
-//     grid-area: news;
-// }
-
-// .camps {
-//     grid-area: camps;
-// }
-
-// .recentes {
-//     grid-area: recentes;
-// }
 
 .recentes ul {
     padding-left: 20px;
 }
-
-// aside#aside-home {
-//     grid-area: aside;
-//     margin: 5px 5px 0px 5px;
-//     justify-self: center;
-//     padding: 10px;
-//     border: 10px solid var(--primary-background);
-// }
 
 footer#footer-default {
     height: 22px;
