@@ -1,21 +1,44 @@
 ---
 layout: default
 ---
+
 <main id="home">
-{% for post in site.posts %}
-    <section class="{% cycle 'intro', 'news', 'camps' %}">
+    <section class="intro">
         <h2>
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            Bem vindo ao LG!
         </h2>
         <p>
-            {{ post.description  }}
+            O blog Lebinhas Games! é o blog certo pra você que quer saber tudo
+            sobre o mundo dos jogos. Aqui você pode encontrar as maiores novidades
+            e acompanhar seus campeonatos favortios!
         </p>
     </section>
-{% endfor %}
+    <section class="recentes">
+        <h2>Posts recentes</h2>
+        <ul>
+        {% for post in site.posts limit:2 %}
+            <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+        {% endfor %}
+        </ul>
+    </section>
+    <section class="news">
+        <h2><a href="{{ '/novidades' | relative_url }}">Novidades</a></h2>
+        <p>
+            Jogos lançados recentemente, atualizações e anúncios. 
+            Por aqui você fiac sabendo de tudo.
+        </p>
+    </section>
+    <section class="camps">
+        <h2><a href="{{ '/campeonatos' | relative_url }}">Campeonatos</a></h2>
+        <p>
+            Acompanhe as principais notícias e resultados dos maiores campeonatos de
+             e-sports.
+        </p>
+    </section>
     <aside id="aside-home">
         <p>
             O objetivo do LG! é ser um centro de informações do mundo dos jogos. Se você
-            está sentindo falta do seu jogo preferido, entre em contato com a gente.
+             está sentindo falta do seu jogo preferido, entre em contato com a gente.
         </p>
     </aside>
 </main>
